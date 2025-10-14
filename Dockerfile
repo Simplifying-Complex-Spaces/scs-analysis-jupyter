@@ -16,4 +16,7 @@ RUN pip install \
     scikit-learn \
     patsy
 
+# Disable authentication for closed environments
+ENTRYPOINT ["start-notebook.py", "--IdentityProvider.token=''"]
+
 LABEL maintainer="tstuckey@simplifyingcomplexspaces.com"
