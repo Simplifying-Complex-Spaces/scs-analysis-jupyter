@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook:latest
+FROM quay.io/jupyter/base-notebook:notebook-7.4.7
 
 LABEL project="Simplifying Complex Spaces"
 
