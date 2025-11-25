@@ -25,6 +25,10 @@ venv.bak/
 .Rproj.user/
 *nb.html
 
+# Docker staging
+out
+
+
 # local notes
 readme_local.md
 readme_local.html
