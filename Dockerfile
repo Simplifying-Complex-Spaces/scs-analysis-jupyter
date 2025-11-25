@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/base-notebook:notebook-7.4.7
+FROM quay.io/jupyter/base-notebook:notebook-7.5.0
 
 LABEL project="Simplifying Complex Spaces"
 
@@ -15,6 +15,9 @@ RUN pip install \
     matplotlib \
     scikit-learn \
     patsy
+
+# Remove the work directory as we don't use it
+RUN rmdir /home/jovyan/work
 
 # Disable authentication for closed environments
 ENTRYPOINT ["start-notebook.py", "--IdentityProvider.token=''"]
