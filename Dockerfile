@@ -19,8 +19,6 @@ RUN pip install \
 # Remove the work directory as we don't use it
 RUN rmdir /home/jovyan/work
 
-WORKDIR /home/jovyan
-
 # Disable authentication for closed environments
 ENTRYPOINT ["start-notebook.py", "--IdentityProvider.token=''"]
 
