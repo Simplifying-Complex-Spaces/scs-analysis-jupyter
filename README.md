@@ -2,7 +2,7 @@
 
 ### Build images for both architectures
 ```sh
-docker build --platform=linux/amd64,linux/arm64 -t registry:tag . 
+docker buildx build --platform=linux/amd64,linux/arm64 -t registry:tag . 
 ```
 ### Push the images 
 ```sh
